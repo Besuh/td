@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Coded by Sean Hamilton, Brian Suh, Key Houck -->
+<!-- Special Thanks to Anthony Morris and William Goode -->
+<!-- As always, thanks Google and GitHub -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = 'text/css' href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <title> Tower Defense </title>
+</head>
+<body>
+    <!-- Here is our canvas -->
+    <canvas id='canvas' class='canvas' width='600' height='600' style='border:3px solid #000;'></canvas> 
+
+    <!-- div's for the towers with onclick functionality -->
+    <div id="archerTower" onclick="changeTower(0);"></div><br><br>
+    <div id="TowerText"><i class="ital">Range:</i> Med <br><i class="ital">  FRate:</i> Med <br> <i class="ital">Dmg:</i> Low </div><br><br><br>
+    <div id="balistaTower" onclick="changeTower(1);"></div><br><br>
+    <div id="TowerText"><i class="ital">Range:</i> Long <br> <i class="ital"> FRate:</i> High <br> <i class="ital">Dmg:</i> Med </div><br><br><br>
+    <div id="catapultTower" onclick="changeTower(2);"></div><br><br>
+    <div id="TowerText"><i class="ital">Range:</i> Short <br> <i class="ital"> FRate:</i> Med <br> <i class="ital">Dmg:</i> High <br><br></div>
+    <br><br>
+
+    <!-- Score, Stopped, Gold (Player Statistics) -->
+    <div id="scores" style='width:600px;'>
+        <span class='left'> Enemy Score:<span id='attackersScore'> 0 </span></span><br>
+        <span class='gold'> Gold: <span id='money'> 300 </span></span>
+        <br>
+        <span class="leftstopped">YOUR SCORE: <span id='stopped'> 0 </span></span>
+    </div>
+    <br><br>
+    <!-- Music Choice -->
+    <fieldset disabled="disabled">
+        Are You Careless? <audio controls autoplay> 
+            <source src = 'sound/gametheme.mp3' type='audio/mpeg'> 
+        </audio> 
+        Are you Classy? <audio controls> 
+            <source src = 'sound/moonlight.mp3' type='audio/mpeg'>
+        </audio> 
+        Are you Game? <audio controls> 
+            <source src = 'sound/godzillaMarch.mp3' type='audio/mpeg'>
+        </audio> 
+        <span class="bottomtextbox">Choose a game sound<br>&nbsp;&nbsp;&nbsp; to the left !</span>
+    </fieldset>
+    <br><br>
+
+    <!-- Importing all scripts -->
+    <script type='text/javascript' src='mainLoop.js'></script>
+    <script type='text/javascript' src='attackerUnits.js'></script>
+    <script type='text/javascript' src='towerUnits.js'></script>
+    <script type='text/javascript' src='bullets.js'></script>
+    <script type='text/javascript' src='mouseClick.js'></script>
+</body>
+</html>

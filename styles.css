@@ -1,0 +1,93 @@
+/* Reset */
+*{
+    font-family: 'Press Start 2P';font-size: 14px;
+    /*font-size: small;*/
+    color: yellow;
+}
+audio {
+    display: block;
+    padding: 10px;
+}
+#archerTower{
+    background: url(imgs/aButton.png);
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+}
+#balistaTower{
+    background: url(imgs/cButton.png);
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+}
+#catapultTower{
+    background: url(imgs/bButton.png);
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+}
+.canvas {
+    float:left;
+    margin-right: 10px;
+    background:url(imgs/tower_background.png);
+}
+.gold{
+    position: relative;
+    top: -10px;
+    float: right;
+}
+.right {
+    
+    /*position: relative;
+    left: 50px;
+    top: -20px;*/
+}
+.leftstopped{
+    position:relative;
+    right: -235px;
+    top: -27px;
+    /*color: green;*/
+}
+body {
+    /* Location of the image  */
+    background-image: url(imgs/medieval.png);
+     /* Background image is centered vertically and horizontally at all times  */
+    background-position: center center;
+     /* Background image doesn't tile  */
+    background-repeat: no-repeat;
+     /* Background image is fixed in the viewport so that it doesn't move when  */
+    /* the content's height is greater than the image's height  */
+    background-attachment: fixed;
+     /* This is what makes the background image rescale based */
+    /* on the container's size  */
+    background-size: cover;
+     /* Set a background color that will be displayed */
+    /* while the background image is loading  */
+    background-color: #464646;
+}
+#attackersScore{
+    color: red;
+}
+#stopped {
+    color:aqua;
+}
+#money {
+    color: orange;
+}
+#TowerText { 
+    color: #F58B4C;
+}
+.ital {
+    color:#F26D21;
+}
+.bottomtextbox { 
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: -100px;
+}
+/*#attackersScore, .left, .right, #money, .leftstopped, #stopped, #TowerText {
+    font-family 'Press Start 2P';
+    font-size 22px;
+}*/
+
